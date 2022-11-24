@@ -22,11 +22,11 @@ public class JdbcService {
 	@PostConstruct
 	public void executeMe()
 	{
-		Groceries g1=new Groceries();
-		g1.setId(10);
-		g1.setName("snacks");
-		g1.setQuantity("100kg");
-		g1.setPrice(70);
+		//Groceries g1=new Groceries();
+		//g1.setId(10);
+		//g1.setName("snacks");
+		//g1.setQuantity("100kg");
+		//g1.setPrice(70);
 		
 		
 		jdbcTemplate.execute("Create Table grocries(Id int primary key,name varchar(20),quantity varchar(20),price varchar(20))  ");
